@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title | safeHTML }}</title>
+    {{ if .Site.Params.google_fonts }}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{{ .Site.Params.google_fonts }}&display=swap">
+    {{ end }}
+    {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{ end }}
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo-wrapper">
+                <img src="/images/logo.svg" alt="Ethical AI Research Initiative Logo" class="site-logo">
+                <h1 class="site-title">{{ .Site.Title | safeHTML }}</h1>
+            </div>
+            <nav class="main-nav">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+                {{ end }}
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container{{ if .IsHome }} home-content{{ end }}">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Copyright }}</p>
+        </div>
+    </footer>
+</body>
+</html> 

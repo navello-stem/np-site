@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="container">
+  <div class="title-wrapper">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="subtitle">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ if .Content }}
+  <div class="content">
+    {{ .Content }}
+  </div>
+  {{ end }}
+  
+  <div class="donation-container">
+    <div class="donation-wrapper">
+      <iframe src="https://donorbox.org/embed/ethical-ai-research?default_interval=m" 
+              name="donorbox" 
+              allowpaymentrequest="allowpaymentrequest" 
+              seamless="seamless" 
+              frameborder="0" 
+              scrolling="no" 
+              height="900px" 
+              width="100%" 
+              style="max-width: 500px; min-width: 250px; max-height:none!important" 
+              allow="payment">
+      </iframe>
+    </div>
+    
+    <div class="donation-info">
+      <h3>Why Support Our Work?</h3>
+      <p>Your donation directly funds our research and education initiatives in ethical AI. We're committed to ensuring that artificial intelligence is developed responsibly, with human values at its core.</p>
+      
+      <div class="donation-benefits">
+        <div class="benefit-item">
+          <div class="benefit-icon research-icon"></div>
+          <h4>Supporting Research</h4>
+          <p>Fund cutting-edge research in AI safety, ethics, and alignment.</p>
+        </div>
+        
+        <div class="benefit-item">
+          <div class="benefit-icon education-icon"></div>
+          <h4>Enabling Education</h4>
+          <p>Help us develop curricula and resources for ethical AI education.</p>
+        </div>
+        
+        <div class="benefit-item">
+          <div class="benefit-icon impact-icon"></div>
+          <h4>Creating Impact</h4>
+          <p>Enable us to advocate for responsible AI policies and standards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }} 

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="container">
+  <div class="title-wrapper">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="subtitle">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ if .Content }}
+  <div class="content">
+    {{ .Content }}
+  </div>
+  {{ end }}
+  
+  <div class="blog-list">
+    {{ $paginator := .Paginate (where .Pages "Type" "blog") }}
+    {{ range $paginator.Pages }}
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <header>
+            <h2 class="blog-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="blog-meta">
+              <span class="blog-date">{{ .Date.Format "January 2, 2006" }}</span>
+              {{ with .Params.categories }}
+                <span class="blog-categories">
+                  {{ range . }}
+                    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                  {{ end }}
+                </span>
+              {{ end }}
+            </div>
+          </header>
+          
+          <div class="blog-summary">
+            {{ with .Params.image }}
+              <div class="blog-thumbnail">
+                <img src="{{ . }}" alt="{{ $.Title }}">
+              </div>
+            {{ end }}
+            <p>{{ .Summary }}</p>
+            <a href="{{ .RelPermalink }}" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+  
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }} 

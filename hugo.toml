@@ -1,0 +1,46 @@
+baseURL = 'https://navello.org/'
+languageCode = 'en-us'
+title = 'Navello Research<br>and <br>Education Foundation'
+theme = 'dot-org-hugo-theme'
+copyright = "Navello Research and Education Foundation. All rights reserved."
+
+# Custom CSS and Fonts
+[params]
+  custom_css = ["css/custom.css"]
+  google_fonts = "family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700"
+
+# Disable list pages and other kinds we don't want
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "donate"
+    name = "Donate"
+    url = "/donate/"
+    weight = 4
+
+[author]
+  name = "Navello"
+  homepage = "https://www.navello.org/"

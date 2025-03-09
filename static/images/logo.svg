@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="peacockGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B4DB" />
+      <stop offset="50%" style="stop-color:#0288D1" />
+      <stop offset="100%" style="stop-color:#7B61FF" />
+    </linearGradient>
+    <linearGradient id="peacockGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00F2FE" />
+      <stop offset="50%" style="stop-color:#4FACFE" />
+      <stop offset="100%" style="stop-color:#7B61FF" />
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FACFE" />
+      <stop offset="50%" style="stop-color:#00F2FE" />
+      <stop offset="100%" style="stop-color:#0093E9" />
+    </linearGradient>
+    <linearGradient id="featherGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#21D4FD" />
+      <stop offset="100%" style="stop-color:#2196F3" />
+    </linearGradient>
+    <linearGradient id="featherGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00F2FE" />
+      <stop offset="100%" style="stop-color:#4FACFE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Peacock crown/crest -->
+  <path d="M150 70 C140 70, 135 60, 135 50 C135 40, 140 35, 150 35 C160 35, 165 40, 165 50 C165 60, 160 70, 150 70Z"
+        fill="url(#featherGrad1)"/>
+  <path d="M135 60 L130 45 M165 60 L170 45"
+        stroke="#21D4FD" stroke-width="2"/>
+
+  <!-- Peacock head and neck with enhanced shape -->
+  <path d="M150 180 C120 180, 105 150, 105 120 C105 90, 127 75, 150 75 C173 75, 195 90, 195 120 C195 150, 180 180, 150 180Z" 
+        fill="url(#peacockGrad1)" stroke="none"/>
+  
+  <!-- Enhanced circuit pattern overlay on head -->
+  <path d="M127 105 L173 105 M127 135 L173 135 M150 105 L150 135" 
+        stroke="white" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Peacock feathers fan -->
+  <g transform="translate(150 180)">
+    <!-- Central eye feather -->
+    <path d="M0 0 C-30 30, -30 90, 0 120 C30 90, 30 30, 0 0" 
+          fill="url(#peacockGrad2)"/>
+    <circle cx="0" cy="60" r="22" fill="url(#eyeGrad)"/>
+    <circle cx="0" cy="60" r="12" fill="#E1F5FE"/>
+    <circle cx="0" cy="60" r="6" fill="#0093E9"/>
+    
+    <!-- Side feathers (more of them) -->
+    <g transform="rotate(-45)">
+      <path d="M0 0 C-22 22, -22 67, 0 90 C22 67, 22 22, 0 0" 
+            fill="url(#featherGrad2)" opacity="0.9"/>
+      <circle cx="0" cy="45" r="15" fill="url(#eyeGrad)"/>
+      <circle cx="0" cy="45" r="7" fill="#E1F5FE"/>
+    </g>
+    
+    <g transform="rotate(-15)">
+      <path d="M0 0 C-25 25, -25 75, 0 100 C25 75, 25 25, 0 0" 
+            fill="url(#featherGrad1)" opacity="0.85"/>
+      <circle cx="0" cy="50" r="17" fill="url(#eyeGrad)"/>
+      <circle cx="0" cy="50" r="8" fill="#E1F5FE"/>
+    </g>
+    
+    <g transform="rotate(15)">
+      <path d="M0 0 C-25 25, -25 75, 0 100 C25 75, 25 25, 0 0" 
+            fill="url(#featherGrad1)" opacity="0.85"/>
+      <circle cx="0" cy="50" r="17" fill="url(#eyeGrad)"/>
+      <circle cx="0" cy="50" r="8" fill="#E1F5FE"/>
+    </g>
+    
+    <g transform="rotate(45)">
+      <path d="M0 0 C-22 22, -22 67, 0 90 C22 67, 22 22, 0 0" 
+            fill="url(#featherGrad2)" opacity="0.9"/>
+      <circle cx="0" cy="45" r="15" fill="url(#eyeGrad)"/>
+      <circle cx="0" cy="45" r="7" fill="#E1F5FE"/>
+    </g>
+  </g>
+
+  <!-- Circuit connections as decorative elements -->
+  <path d="M105 225 L195 225 M150 225 L150 255" 
+        stroke="url(#peacockGrad1)" stroke-width="3"/>
+  
+  <!-- Circuit nodes as decorative elements -->
+  <circle cx="105" cy="225" r="5" fill="url(#peacockGrad1)"/>
+  <circle cx="195" cy="225" r="5" fill="url(#peacockGrad1)"/>
+  <circle cx="150" cy="255" r="5" fill="url(#peacockGrad1)"/>
+</svg> 

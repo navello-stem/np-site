@@ -25,4 +25,3 @@ There are many ways to support our work:
 - **Stay Informed**: Subscribe to our blog for updates on our work and developments in ethical AI
 
 Thank you for your interest in our foundation. Together, we can ensure that AI development proceeds in a way that benefits all of humanity.
-

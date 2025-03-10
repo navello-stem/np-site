@@ -1,8 +1,10 @@
 ---
 title: "Make a Difference Today"
-description: "Your generous donation directly supports our work in researching and promoting ethical AI practices. We're dedicated to ensuring that artificial intelligence serves humanity's best interests while minimizing potential harms."
+description: ""
 layout: "single"
 ---
+Your generous donation directly supports our work in researching and promoting ethical AI practices. We're dedicated to ensuring that artificial intelligence serves humanity's best interests while minimizing potential harms.
+
 With your support, we can:
 
 * Fund critical research in AI alignment and safety

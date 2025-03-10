@@ -2,7 +2,7 @@
 title = "Ethical AI trends"
 date = 2024-06-24
 categories = ["AI Ethics", "Research"]
-draft = true
+draft = false
 +++
 
 ### **Ethical AI Research: Principles, Challenges, and Future Directions**  

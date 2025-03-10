@@ -1,31 +1,30 @@
-+++
-date = '2025-03-08T01:54:20-08:00'
-draft = false
-title = 'About'
-+++
+---
+title: "About Us"
+description: "Learn about our mission to promote ethical AI development and education"
+---
 
-# Navello AI Research
+{{< image src="images/ethical-ai.svg" alt="Ethical AI Principles" class="hero-image-img" >}}
 
-At **Navello AI Research**, we are committed to advancing artificial intelligence that prioritizes fairness, transparency, privacy, and accountability. Our mission is to develop AI systems that benefit society while upholding the highest ethical standards. Through interdisciplinary collaboration and cutting-edge research, we strive to ensure that AI technologies are aligned with human values and promote social good.
+We are a team of AI researchers working towards the purpose of making AI safer and more aligned with human values. Our foundation is dedicated to conducting research into ethical AI development and providing educational resources to promote responsible AI practices.
 
-## Our Vision
-We envision a future where AI enhances human capabilities, respects individual rights, and fosters a fair and just society. Our work aims to bridge the gap between technological innovation and ethical responsibility, ensuring that AI serves everyone equitably.
+## Our Mission
 
-## What We Do
+Our mission is to advance the field of AI in a way that benefits humanity as a whole. We believe that artificial intelligence has tremendous potential to solve pressing global challenges, but must be developed with careful consideration of its ethical implications.
 
-- **Fairness & Bias Mitigation**: We research and develop methods to identify, measure, and mitigate biases in AI systems, ensuring fair outcomes across diverse populations.
+## Research Areas
 
-- **Transparency & Explainability**: We design AI models that are interpretable and transparent, empowering users to understand how decisions are made.
+- **AI Alignment**: Ensuring AI systems act in accordance with human values
+- **AI Safety**: Developing techniques to make AI systems robust and safe
+- **Ethical AI**: Exploring the ethical dimensions of AI development and deployment
+- **AI Education**: Creating educational materials to foster understanding of AI concepts and implications
 
-- **Privacy & Security**: We implement privacy-preserving techniques and advocate for responsible data use to protect sensitive information.
+## Get Involved
 
-- **Accountability & Governance**: We establish best practices for AI governance, ensuring systems are held to rigorous ethical and legal standards.
+There are many ways to support our work:
 
-## Our Approach
-Our research combines technical excellence with ethical insight. We collaborate with industry leaders, academic institutions, and policymakers to shape the future of AI. By fostering open dialogue and sharing our findings, we aim to create AI solutions that are not only innovative but also socially responsible.
+- **Donate**: Financial contributions help us expand our research and educational initiatives
+- **Collaborate**: We welcome partnerships with researchers, educators, and organizations
+- **Stay Informed**: Subscribe to our blog for updates on our work and developments in ethical AI
 
-## Join Us
-We believe that ethical AI requires collective action. Whether you're a researcher, policymaker, or concerned citizen, we welcome you to join us in building a future where AI works for everyone.
-
-For more information or to get involved, contact us at **[info@navello.org](info@navello.org)**
+Thank you for your interest in our foundation. Together, we can ensure that AI development proceeds in a way that benefits all of humanity.
 

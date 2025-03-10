@@ -49,6 +49,4 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robots
 [author]
   name = "Navello"
   homepage = "https://www.navello.org/"
-
-[markup.goldmark.renderer]
-  unsafe = true
+  

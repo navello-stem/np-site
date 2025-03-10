@@ -3,8 +3,6 @@ title: "About Us"
 description: "Learn about our mission to promote ethical AI development and education"
 ---
 
-{{< image src="images/ethical-ai.svg" alt="Ethical AI Principles" class="hero-image-img" >}}
-
 We are a team of AI researchers working towards the purpose of making AI safer and more aligned with human values. Our foundation is dedicated to conducting research into ethical AI development and providing educational resources to promote responsible AI practices.
 
 ## Our Mission

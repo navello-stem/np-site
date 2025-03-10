@@ -10,10 +10,6 @@ publishDir = "public"
   custom_css = ["css/custom.css"]
   google_fonts = "family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700"
 
-# Enable relative URLs and canonify URLs
-relativeURLs = false
-canonifyURLs = true
-
 # Disable list pages and other kinds we don't want
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
@@ -49,4 +45,3 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robots
 [author]
   name = "Navello"
   homepage = "https://www.navello.org/"
-  

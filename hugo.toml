@@ -1,4 +1,4 @@
-baseURL = 'https://navello-stem.github.io/np-site/'
+baseURL = 'navello.org'
 languageCode = 'en-us'
 title = 'Navello Research<br>and <br>Education Foundation'
 theme = 'dot-org-hugo-theme'

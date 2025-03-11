@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title | safeHTML }}</title>
-    {{ if .Site.Params.google_fonts }}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{{ .Site.Params.google_fonts }}&display=swap">
-    {{ end }}
+    
+    <!-- System font fallback instead of Google Fonts -->
+    <style>
+        :root {
+            --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            font-family: var(--body-font);
+        }
+        
+        h1, h2, h3, h4, h5, h6, .site-title, .title-wrapper h1 {
+            font-family: var(--heading-font);
+            font-weight: 700;
+        }
+    </style>
+    
     {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ . | absURL }}">
+    <link rel="stylesheet" href="{{ absURL . }}">
     {{ end }}
 </head>
 <body>
     <header class="site-header">
         <div class="header-content">
             <div class="logo-wrapper">
-                <img src="/images/logo.svg" alt="Ethical AI Research Initiative Logo" class="site-logo">
+                <img src="{{ absURL "images/logo.svg" }}" alt="Ethical AI Research Initiative Logo" class="site-logo">
                 <h1 class="site-title">{{ .Site.Title | safeHTML }}</h1>
             </div>
             <nav class="main-nav">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+                <a href="{{ absURL .URL }}" title="{{ .Name }}" {{ if eq .Identifier "donate" }}class="donate-button"{{ end }}>{{ .Name }}</a>
                 {{ end }}
             </nav>
         </div>

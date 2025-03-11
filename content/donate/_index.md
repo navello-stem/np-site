@@ -1,11 +1,8 @@
 ---
-title: "Support Our Mission"
-description: "Your contribution helps build a future with ethical AI at its core"
+title: "Make a Difference Today"
+description: ""
 layout: "single"
 ---
-
-## Make a Difference Today
-
 Your generous donation directly supports our work in researching and promoting ethical AI practices. We're dedicated to ensuring that artificial intelligence serves humanity's best interests while minimizing potential harms.
 
 With your support, we can:

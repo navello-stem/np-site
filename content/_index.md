@@ -10,7 +10,7 @@ description = "Shaping a future where artificial intelligence is ethical, unbias
   <p class="subtitle">Shaping a future where artificial intelligence is<br>ethical, unbiased, and beneficial to all.</p>
 </div>
 
-![Abstract visualization of ethical AI concepts showing interconnected nodes with human elements](/images/ethical-ai.svg)
+{{< image src="images/ethical-ai.svg" alt="Abstract visualization of ethical AI concepts showing interconnected nodes with human elements" class="hero-image-img">}}
 
 At the Navello AI Research Initiative, we are committed to shaping a future where artificial intelligence is ethical, unbiased, and beneficial to all. Our mission is to drive cutting-edge research while empowering the next generation of AI innovators.
 

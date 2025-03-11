@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title | safeHTML }}</title>
-    {{ if .Site.Params.google_fonts }}
-    <!-- Fallback to system fonts since Google Fonts is failing -->
+    
+    <!-- System font fallback instead of Google Fonts -->
     <style>
+        :root {
+            --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: var(--body-font);
+        }
+        
+        h1, h2, h3, h4, h5, h6, .site-title, .title-wrapper h1 {
+            font-family: var(--heading-font);
+            font-weight: 700;
         }
     </style>
-    {{ end }}
+    
     {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ . | absURL }}">
+    <link rel="stylesheet" href="{{ absURL . }}">
     {{ end }}
 </head>
 <body>
@@ -25,7 +35,7 @@
             </div>
             <nav class="main-nav">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" title="{{ .Name }}" {{ if eq .Identifier "donate" }}class="donate-button"{{ end }}>{{ .Name }}</a>
+                <a href="{{ absURL .URL }}" title="{{ .Name }}" {{ if eq .Identifier "donate" }}class="donate-button"{{ end }}>{{ .Name }}</a>
                 {{ end }}
             </nav>
         </div>

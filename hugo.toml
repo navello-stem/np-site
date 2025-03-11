@@ -1,4 +1,4 @@
-baseURL = "www.navello.org"
+baseURL = "https://www.navello.org"
 languageCode = "en-us"
 title = "Navello Research<br>and<br>Education Foundation"
 theme = 'dot-org-hugo-theme'
